@@ -14,12 +14,16 @@ const rejectedFilterBtn = document.getElementById('rejected-filter-btn');
 const allCards = document.getElementById('all-cards');
 const mainContainer = document.querySelector('main');
 const filterSection = document.getElementById('filter-section');
+let availableCount = document.getElementById('availableCount');
 
 function calculateCount() {
     total.innerText = allCards.children.length;
     interviewCount.innerText = interviewList.length;
     rejectedCount.innerText = rejectedList.length;
+    availableCount.innerText = total.innerText + " jobs";
 }
+
+
 calculateCount();
 
 
@@ -43,15 +47,19 @@ function toggleStyle(id) {
     if(id == 'interview-filter-btn'){
         allCards.classList.add('hidden');
         filterSection.classList.remove('hidden');
+        availableCount.innerText = interviewList.length + ' job of 8 jobs';
         renderInterview();
     }
     else if(id == 'all-filter-btn'){
         allCards.classList.remove('hidden');
         filterSection.classList.add('hidden');
+        availableCount.innerText = total.innerText + " jobs";
+        calculateCount();
     }
     else if(id == 'rejected-filter-btn'){
         allCards.classList.add('hidden');
         filterSection.classList.remove('hidden');
+        availableCount.innerText = rejectedList.length + ' job of 8 jobs';
         renderRejected();
     }
     
@@ -67,13 +75,13 @@ mainContainer.addEventListener('click', function(event) {
     const companyName = parentNode.querySelector('.companyName').innerText;
     const postName = parentNode.querySelector('.postName').innerText;
     const jobDescription = parentNode.querySelector('.jobDescription').innerText;
-    const status = parentNode.querySelector('.status').innerText;
     const notes = parentNode.querySelector('.notes').innerText;
 
-    const statusBtn = parentNode.querySelector('.status');
-    statusBtn.innerText = 'Interview';
-    statusBtn.classList.remove('bg-[#EEF4FF]', 'text-[#002C5C]', 'shadow-sm','border-[#EF4444]','text-[#EF4444]');
-    statusBtn.classList.add('text-[#10B981]','font-semibold','border','border-[#10B981]','rounded-sm');
+    
+    const status = parentNode.querySelector('.status');
+    status.innerText = 'Interview';
+    status.classList.remove('bg-[#EEF4FF]', 'text-[#002C5C]', 'shadow-sm','border-[#EF4444]','text-[#EF4444]');
+    status.classList.add('text-[#10B981]','font-semibold','border','border-[#10B981]','rounded-sm');
 
     const cardInfo = {
         companyName,
@@ -102,14 +110,13 @@ mainContainer.addEventListener('click', function(event) {
     const companyName = parentNode.querySelector('.companyName').innerText;
     const postName = parentNode.querySelector('.postName').innerText;
     const jobDescription = parentNode.querySelector('.jobDescription').innerText;
-    const status = parentNode.querySelector('.status').innerText;
     const notes = parentNode.querySelector('.notes').innerText;
 
     
-    const statusBtn = parentNode.querySelector('.status');
-    statusBtn.innerText = 'Rejected';
-    statusBtn.classList.remove('bg-[#EEF4FF]', 'text-[#002C5C]', 'shadow-sm','text-[#10B981]','border-[#10B981]');
-    statusBtn.classList.add('text-[#EF4444]','font-semibold','border','border-[#EF4444]','rounded-sm');
+    const status = parentNode.querySelector('.status');
+    status.innerText = 'Rejected';
+    status.classList.remove('bg-[#EEF4FF]', 'text-[#002C5C]', 'shadow-sm','text-[#10B981]','border-[#10B981]');
+    status.classList.add('text-[#EF4444]','font-semibold','border','border-[#EF4444]','rounded-sm');
 
     
     const cardInfo = {

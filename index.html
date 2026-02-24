@@ -33,15 +33,15 @@
         <!-- main part 1 -->
         <div class="flex justify-between mb-6">
             <h3 class="font-bold text-[#002C5C]">Available Jobs</h3>
-            <p class="font-medium text-[#64748B]">0 jobs</p>
+            <p id="availableCount" class="font-medium text-[#64748B]">0 jobs</p>
         </div>
         <!-- main part 2 -->
         <div class="flex gap-2 mb-6">
-            <button onclick="toggleStyle('all-filter-btn')" class="bg-[#3B82F6] text-white font-semibold px-5 py-2 shadow-md rounded-sm"
+            <button onclick="toggleStyle('all-filter-btn')" class="transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer bg-[#3B82F6] text-white font-semibold px-5 py-2 shadow-md rounded-sm"
                 id="all-filter-btn">All</button>
-            <button onclick="toggleStyle('interview-filter-btn')" class="bg-white text-[#64748B] font-medium px-5 py-2 shadow-md rounded-sm"
+            <button onclick="toggleStyle('interview-filter-btn')" class="transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer bg-white text-[#64748B] font-medium px-5 py-2 shadow-md rounded-sm"
                 id="interview-filter-btn">Interview</button>
-            <button onclick="toggleStyle('rejected-filter-btn')" class="bg-white text-[#64748B] font-medium px-5 py-2 shadow-md rounded-sm"
+            <button onclick="toggleStyle('rejected-filter-btn')" class="transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer bg-white text-[#64748B] font-medium px-5 py-2 shadow-md rounded-sm"
                 id="rejected-filter-btn">Rejected</button>
         </div>
 
@@ -68,13 +68,13 @@
                             millions of users worldwide.</p>
                     </div>
                     <div class="flex gap-2">
-                        <button class="btn-interview text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
-                        <button class="btn-rejected text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
+                        <button class="btn-interview transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
+                        <button class="btn-rejected transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
                     </div>
                 </div>
                 <!-- card part 2 -->
                 <div>
-                    <button class="btn-delete px-4 py-2">
+                    <button class="btn-delete px-4 py-2 cursor-pointer">
                         <img src="./images/Group 1.png" alt="">
                     </button>
                 </div>
@@ -96,13 +96,13 @@
                         <p class="notes text-[#323B49]">Create stunning web experiences for high-profile clients. Must have portfolio and experience with modern web design trends.</p>
                     </div>
                     <div class="flex gap-2">
-                        <button class="btn-interview text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
-                        <button class="btn-rejected text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
+                        <button class="btn-interview transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
+                        <button class="btn-rejected transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
                     </div>
                 </div>
                 <!-- card part 2 -->
                 <div>
-                    <button class="btn-delete px-4 py-2">
+                    <button class="btn-delete px-4 py-2 cursor-pointer">
                         <img src="./images/Group 1.png" alt="">
                     </button>
                 </div>
@@ -124,13 +124,13 @@
                         <p class="notes text-[#323B49]">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.</p>
                     </div>
                     <div class="flex gap-2">
-                        <button class="btn-interview text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
-                        <button class="btn-rejected text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
+                        <button class="btn-interview transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
+                        <button class="btn-rejected transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
                     </div>
                 </div>
                 <!-- card part 2 -->
                 <div>
-                    <button class="btn-delete px-4 py-2">
+                    <button class="btn-delete px-4 py-2 cursor-pointer">
                         <img src="./images/Group 1.png" alt="">
                     </button>
                 </div>
@@ -152,13 +152,13 @@
                         <p class="notes text-[#323B49]">Design and maintain scalable backend systems using Python and AWS. Work with modern DevOps practices and cloud infrastructure.</p>
                     </div>
                     <div class="flex gap-2">
-                        <button class="btn-interview text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
-                        <button class="btn-rejected text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
+                        <button class="btn-interview transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
+                        <button class="btn-rejected transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
                     </div>
                 </div>
                 <!-- card part 2 -->
                 <div>
-                    <button class="btn-delete px-4 py-2">
+                    <button class="btn-delete px-4 py-2 cursor-pointer">
                         <img src="./images/Group 1.png" alt="">
                     </button>
                 </div>
@@ -180,13 +180,13 @@
                         <p class="notes text-[#323B49]">Create beautiful and functional user interfaces for our suite of products. Strong design skills and frontend development expertise required.</p>
                     </div>
                     <div class="flex gap-2">
-                        <button class="btn-interview text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
-                        <button class="btn-rejected text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
+                        <button class="btn-interview transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
+                        <button class="btn-rejected transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
                     </div>
                 </div>
                 <!-- card part 2 -->
                 <div>
-                    <button class="btn-delete px-4 py-2">
+                    <button class="btn-delete px-4 py-2 cursor-pointer">
                         <img src="./images/Group 1.png" alt="">
                     </button>
                 </div>
@@ -208,13 +208,13 @@
                         <p class="notes text-[#323B49]">Build enterprise applications with JavaScript and modern frameworks. We offer competitive compensation, health insurance, and professional development opportunities.</p>
                     </div>
                     <div class="flex gap-2">
-                        <button class="btn-interview text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
-                        <button class="btn-rejected text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
+                        <button class="btn-interview transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
+                        <button class="btn-rejected transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
                     </div>
                 </div>
                 <!-- card part 2 -->
                 <div>
-                    <button class="btn-delete px-4 py-2">
+                    <button class="btn-delete px-4 py-2 cursor-pointer">
                         <img src="./images/Group 1.png" alt="">
                     </button>
                 </div>
@@ -236,13 +236,13 @@
                         <p class="notes text-[#323B49]">Join our fast-growing startup and work on our core platform. Experience with Node.js and React required. Great benefits and equity package included.</p>
                     </div>
                     <div class="flex gap-2">
-                        <button class="btn-interview text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
-                        <button class="btn-rejected text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
+                        <button class="btn-interview transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
+                        <button class="btn-rejected transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
                     </div>
                 </div>
                 <!-- card part 2 -->
                 <div>
-                    <button class="btn-delete px-4 py-2">
+                    <button class="btn-delete px-4 py-2 cursor-pointer">
                         <img src="./images/Group 1.png" alt="">
                     </button>
                 </div>
@@ -264,13 +264,13 @@
                         <p class="notes text-[#323B49]">We are looking for an experienced Frontend Developer to build scalable web applications using React and TypeScript. You will work with a talented team on cutting-edge projects.</p>
                     </div>
                     <div class="flex gap-2">
-                        <button class="btn-interview text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
-                        <button class="btn-rejected text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
+                        <button class="btn-interview transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#10B981] font-semibold px-4 py-2 border border-[#10B981] rounded-sm">interview</button>
+                        <button class="btn-rejected transform transition duration-200 hover:scale-95 active:scale-90 cursor-pointer text-[#EF4444] font-semibold px-4 py-2 border border-[#EF4444] rounded-sm">Rejected</button>
                     </div>
                 </div>
                 <!-- card part 2 -->
                 <div>
-                    <button class="btn-delete px-4 py-2">
+                    <button class="btn-delete px-4 py-2 cursor-pointer">
                         <img src="./images/Group 1.png" alt="">
                     </button>
                 </div>
