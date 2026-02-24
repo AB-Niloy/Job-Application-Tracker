@@ -173,7 +173,7 @@ function renderInterview() {
         filterSection.innerHTML = `
         <div class="text-center  p-6 bg-white shadow-md rounded-sm py-20">
                     <img src="./images/jobs.png" alt="" class="mx-auto">
-                    <p class="font-semibold text-2xl text-[#002C5C] mt-5">No jobs available</p>
+                    <p class="font-semibold text-2xl text-[#002C5C] mt-6">No jobs available</p>
                     <p class="text-[#64748B]">Check back soon for new job opportunities</p>
                 </div>
     `;
